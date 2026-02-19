@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: teste-completo
+  description: Projeto FastAPI criado via Backstage com CI/CD e ArgoCD
+  annotations:
+    github.com/project-slug: backstage-learning-durelli/teste-completo
+    argocd/app-name: teste-completo
+    backstage.io/kubernetes-id: teste-completo
+  labels:
+    system: teste-completo
+    managed-by: backstage
+spec:
+  type: service
+  lifecycle: experimental
+  owner: group:default
+  system: teste-completo
